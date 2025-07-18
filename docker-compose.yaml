@@ -4,14 +4,14 @@ services:
   tw3-back:
     image: tw3-back-local
     ports:
-      - ${TW3_BACKEND_PORT}:270
+      - ${VITE_TW3_BACKEND_PORT}:270
     build:
       context: .
       dockerfile: Dockerfile
     env_file:
       - .env
     expose:
-      - ${TW3_BACKEND_PORT}
+      - ${VITE_TW3_BACKEND_PORT}
     container_name: tw3-back-container
 
 #networks:

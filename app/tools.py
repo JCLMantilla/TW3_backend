@@ -17,9 +17,8 @@ from app.utils import ScrapingBeeService, html_cleaner
 
 
 
+
 # ULTIMATE SEARCH ENGINE
-
-
 async def google_search_tool(query: str) -> str:
 
     '''
@@ -53,6 +52,9 @@ async def google_search_tool(query: str) -> str:
     logging.info(f" It took {end - start} seconds to do the internet search ")
 
     return out
+
+
+
 
 
 
